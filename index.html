@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,18 +24,25 @@
             <a href="#hero" class="nav-logo">
                 <span class="logo-bracket">{</span>AR<span class="logo-bracket">}</span>
             </a>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
+            </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
+                <li><a href="#certifications" class="nav-link" data-i18n="nav.certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-link nav-cta" data-i18n="nav.contact">Let's Talk</a></li>
             </ul>
         </div>
     </nav>
@@ -47,10 +54,10 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <span class="badge-dot"></span>
-                Available for opportunities
+                <span data-i18n="hero.badge">Available for opportunities</span>
             </div>
             <h1 class="hero-title">
-                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-greeting" data-i18n="hero.greeting">Hi, I'm</span>
                 <span class="hero-name">Aymen Rachid</span>
             </h1>
             <div class="hero-typewriter">
@@ -58,7 +65,7 @@
                 <span class="typewriter-text" id="typewriter"></span>
                 <span class="typewriter-cursor">|</span>
             </div>
-            <p class="hero-description">
+            <p class="hero-description" data-i18n-html="hero.description">
                 Lead DevOps Engineer crafting <strong>resilient infrastructure</strong>, 
                 automating <strong>everything</strong>, and building platforms that scale. 
                 Turning complex systems into elegant, reliable solutions.
@@ -66,23 +73,23 @@
             <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number" data-target="7">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Years Experience</span>
+                    <span class="stat-label" data-i18n="hero.stat.years">Years Experience</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" data-target="70">0</span><span class="stat-suffix">%</span>
-                    <span class="stat-label">Deployment Time Reduced</span>
+                    <span class="stat-label" data-i18n="hero.stat.deployment">Deployment Time Reduced</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Projects Delivered</span>
+                    <span class="stat-label" data-i18n="hero.stat.projects">Projects Delivered</span>
                 </div>
             </div>
             <div class="hero-actions">
                 <a href="#experience" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i> View My Work
+                    <i class="fas fa-rocket"></i> <span data-i18n="hero.cta.work">View My Work</span>
                 </a>
                 <a href="#contact" class="btn btn-outline">
-                    <i class="fas fa-envelope"></i> Get in Touch
+                    <i class="fas fa-envelope"></i> <span data-i18n="hero.cta.contact">Get in Touch</span>
                 </a>
             </div>
             <div class="hero-social">
@@ -101,7 +108,7 @@
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
-            <span>Scroll down</span>
+            <span data-i18n="hero.scroll">Scroll down</span>
         </div>
     </section>
 
@@ -110,30 +117,30 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">&lt;about&gt;</span>
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
                 <div class="section-line"></div>
             </div>
             <div class="about-grid">
                 <div class="about-text">
-                    <p class="about-intro">
+                    <p class="about-intro" data-i18n-html="about.intro">
                         I'm a <strong>Lead DevOps Engineer</strong> based in Paris with 7+ years of experience 
                         building and operating production-grade cloud infrastructure across industries including 
                         <strong>telecom</strong>, <strong>fintech</strong>, <strong>IoT</strong>, and <strong>SaaS</strong>.
                     </p>
-                    <p>
+                    <p data-i18n-html="about.p1">
                         My expertise lies at the intersection of <strong>infrastructure automation</strong>, 
                         <strong>platform engineering</strong>, and <strong>security hardening</strong>. I design 
                         and implement end-to-end CI/CD pipelines, orchestrate containerized workloads at scale, 
                         and build observability stacks that give teams full visibility into their systems.
                     </p>
-                    <p>
+                    <p data-i18n-html="about.p2">
                         At <strong>Orange France</strong>, I work within a cross-functional team of 18 engineers 
                         on network security automation projects, reducing deployment timelines by <strong>70%</strong> 
                         while enforcing strict security policies across Kubernetes environments. I'm passionate 
                         about <strong>mentoring peers</strong>, standardizing engineering practices, and bridging 
                         the gap between development and operations.
                     </p>
-                    <p>
+                    <p data-i18n-html="about.p3">
                         I hold an <strong>Engineering degree in Software Engineering</strong> and a 
                         <strong>Master's in International Business & Technology</strong> from IÉSEG School of 
                         Management, giving me a unique blend of technical depth and business acumen.
@@ -141,15 +148,15 @@
                     <div class="about-highlights">
                         <div class="highlight">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Paris, France</span>
+                            <span data-i18n="about.location">Paris, France</span>
                         </div>
                         <div class="highlight">
                             <i class="fas fa-language"></i>
-                            <span>French · English · Arabic</span>
+                            <span data-i18n="about.languages">French · English · Arabic</span>
                         </div>
                         <div class="highlight">
                             <i class="fas fa-briefcase"></i>
-                            <span>Open to remote & hybrid</span>
+                            <span data-i18n="about.availability">Open to remote & hybrid</span>
                         </div>
                     </div>
                 </div>
@@ -168,7 +175,7 @@
                                 <span class="prompt">$</span>
                                 <span class="command">cat profile.yaml</span>
                             </div>
-                            <div class="terminal-output">
+                            <div class="terminal-output" data-i18n-html="about.terminal">
 <pre>
 <span class="yaml-key">name:</span> Aymen Rachid
 <span class="yaml-key">role:</span> Lead DevOps Engineer
@@ -199,7 +206,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">&lt;skills&gt;</span>
-                <h2 class="section-title">Technical Arsenal</h2>
+                <h2 class="section-title" data-i18n="skills.title">Technical Arsenal</h2>
                 <div class="section-line"></div>
             </div>
             <div class="skills-grid">
@@ -207,8 +214,8 @@
                     <div class="skill-icon">
                         <i class="fas fa-code-branch"></i>
                     </div>
-                    <h3>CI/CD & Automation</h3>
-                    <p>Designing and maintaining production-grade delivery pipelines that ship code reliably and fast.</p>
+                    <h3 data-i18n="skills.cicd.title">CI/CD & Automation</h3>
+                    <p data-i18n="skills.cicd.desc">Designing and maintaining production-grade delivery pipelines that ship code reliably and fast.</p>
                     <div class="skill-tags">
                         <span class="tag">GitLab CI/CD</span>
                         <span class="tag">Jenkins</span>
@@ -223,8 +230,8 @@
                     <div class="skill-icon">
                         <i class="fas fa-cloud"></i>
                     </div>
-                    <h3>Cloud & Infrastructure</h3>
-                    <p>Architecting scalable, cost-efficient cloud environments with Infrastructure as Code.</p>
+                    <h3 data-i18n="skills.cloud.title">Cloud & Infrastructure</h3>
+                    <p data-i18n="skills.cloud.desc">Architecting scalable, cost-efficient cloud environments with Infrastructure as Code.</p>
                     <div class="skill-tags">
                         <span class="tag">AWS</span>
                         <span class="tag">Azure</span>
@@ -242,8 +249,8 @@
                     <div class="skill-icon">
                         <i class="fas fa-terminal"></i>
                     </div>
-                    <h3>Development & Scripting</h3>
-                    <p>Building internal tools, APIs, and automation scripts that power DevOps workflows.</p>
+                    <h3 data-i18n="skills.dev.title">Development & Scripting</h3>
+                    <p data-i18n="skills.dev.desc">Building internal tools, APIs, and automation scripts that power DevOps workflows.</p>
                     <div class="skill-tags">
                         <span class="tag">Python</span>
                         <span class="tag">FastAPI</span>
@@ -260,8 +267,8 @@
                     <div class="skill-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Observability & Monitoring</h3>
-                    <p>Full-stack observability with metrics, logs, and traces for proactive incident management.</p>
+                    <h3 data-i18n="skills.obs.title">Observability & Monitoring</h3>
+                    <p data-i18n="skills.obs.desc">Full-stack observability with metrics, logs, and traces for proactive incident management.</p>
                     <div class="skill-tags">
                         <span class="tag">Prometheus</span>
                         <span class="tag">Grafana</span>
@@ -276,8 +283,8 @@
                     <div class="skill-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Security & Compliance</h3>
-                    <p>Embedding security into every layer — from network firewalls to Kubernetes admission policies.</p>
+                    <h3 data-i18n="skills.sec.title">Security & Compliance</h3>
+                    <p data-i18n="skills.sec.desc">Embedding security into every layer — from network firewalls to Kubernetes admission policies.</p>
                     <div class="skill-tags">
                         <span class="tag">Vault</span>
                         <span class="tag">Keycloak</span>
@@ -295,8 +302,8 @@
                     <div class="skill-icon">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h3>Data & Systems</h3>
-                    <p>Managing databases, Linux systems, and cross-functional collaboration at scale.</p>
+                    <h3 data-i18n="skills.data.title">Data & Systems</h3>
+                    <p data-i18n="skills.data.desc">Managing databases, Linux systems, and cross-functional collaboration at scale.</p>
                     <div class="skill-tags">
                         <span class="tag">PostgreSQL</span>
                         <span class="tag">MongoDB</span>
@@ -315,7 +322,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">&lt;experience&gt;</span>
-                <h2 class="section-title">Professional Journey</h2>
+                <h2 class="section-title" data-i18n="experience.title">Professional Journey</h2>
                 <div class="section-line"></div>
             </div>
             <div class="timeline">
@@ -328,21 +335,21 @@
                         <div class="timeline-header">
                             <div class="timeline-meta">
                                 <span class="timeline-date">
-                                    <i class="fas fa-calendar-alt"></i> June 2022 — Present
+                                    <i class="fas fa-calendar-alt"></i> <span data-i18n="exp.orange.date">June 2022 — Present</span>
                                 </span>
                                 <span class="timeline-location">
                                     <i class="fas fa-map-marker-alt"></i> Paris, France
                                 </span>
                             </div>
-                            <span class="timeline-badge current">Current</span>
+                            <span class="timeline-badge current" data-i18n="exp.current">Current</span>
                         </div>
-                        <h3 class="timeline-title">Lead DevOps Engineer</h3>
+                        <h3 class="timeline-title" data-i18n="exp.orange.title">Lead DevOps Engineer</h3>
                         <h4 class="timeline-company">
                             <span class="company-name">Orange France</span>
                             <span class="company-divider">·</span>
-                            <span class="company-project">Network Security Automation (Service Flux)</span>
+                            <span class="company-project" data-i18n="exp.orange.project">Network Security Automation (Service Flux)</span>
                         </h4>
-                        <ul class="timeline-details">
+                        <ul class="timeline-details" data-i18n-html="exp.orange.details">
                             <li>Architected and deployed end-to-end <strong>CI/CD pipelines</strong> automating the provisioning and configuration of network security appliances, cutting deployment time by <strong>70%</strong>.</li>
                             <li>Collaborated within a cross-functional team of <strong>18 engineers</strong> on projects spanning network automation, security enforcement, and platform standardization.</li>
                             <li>Developed secure <strong>REST APIs</strong> (Python/FastAPI) to streamline client-to-service interactions and automate firewall rule management across enterprise-grade appliances.</li>
@@ -370,20 +377,20 @@
                         <div class="timeline-header">
                             <div class="timeline-meta">
                                 <span class="timeline-date">
-                                    <i class="fas fa-calendar-alt"></i> July 2021 — June 2022
+                                    <i class="fas fa-calendar-alt"></i> <span data-i18n="exp.mindlift.date">July 2021 — June 2022</span>
                                 </span>
                                 <span class="timeline-location">
                                     <i class="fas fa-map-marker-alt"></i> Paris, France
                                 </span>
                             </div>
                         </div>
-                        <h3 class="timeline-title">DevOps Engineer</h3>
+                        <h3 class="timeline-title" data-i18n="exp.mindlift.title">DevOps Engineer</h3>
                         <h4 class="timeline-company">
                             <span class="company-name">Mind-Lift Engineering</span>
                             <span class="company-divider">·</span>
-                            <span class="company-project">Business Simulation Platform</span>
+                            <span class="company-project" data-i18n="exp.mindlift.project">Business Simulation Platform</span>
                         </h4>
-                        <ul class="timeline-details">
+                        <ul class="timeline-details" data-i18n-html="exp.mindlift.details">
                             <li>Administered and optimized <strong>AWS infrastructure</strong> — VPC networking, IAM policies, ELB configuration, S3 storage, Auto Scaling groups, and Security Groups.</li>
                             <li>Implemented <strong>Cloudflare</strong> security layer with custom WAF rules, SSL certificate management, and DDoS protection for production workloads.</li>
                             <li>Executed a full <strong>server migration</strong> with zero downtime, improving availability and infrastructure resilience.</li>
@@ -410,20 +417,20 @@
                         <div class="timeline-header">
                             <div class="timeline-meta">
                                 <span class="timeline-date">
-                                    <i class="fas fa-calendar-alt"></i> January 2021 — July 2021
+                                    <i class="fas fa-calendar-alt"></i> <span data-i18n="exp.machinestalk.date">January 2021 — July 2021</span>
                                 </span>
                                 <span class="timeline-location">
-                                    <i class="fas fa-map-marker-alt"></i> Tunis, Tunisia
+                                    <i class="fas fa-map-marker-alt"></i> <span data-i18n="exp.machinestalk.location">Tunis, Tunisia</span>
                                 </span>
                             </div>
                         </div>
-                        <h3 class="timeline-title">Full Stack Engineer</h3>
+                        <h3 class="timeline-title" data-i18n="exp.machinestalk.title">Full Stack Engineer</h3>
                         <h4 class="timeline-company">
                             <span class="company-name">Machinestalk</span>
                             <span class="company-divider">·</span>
-                            <span class="company-project">SaaS IoT Platform (B2B / B2C)</span>
+                            <span class="company-project" data-i18n="exp.machinestalk.project">SaaS IoT Platform (B2B / B2C)</span>
                         </h4>
-                        <ul class="timeline-details">
+                        <ul class="timeline-details" data-i18n-html="exp.machinestalk.details">
                             <li>Developed <strong>usage control mechanisms</strong> to enforce security policies and optimize resource consumption across IoT platforms.</li>
                             <li>Integrated an open-source <strong>subscription and billing platform</strong> to automate secure payment processing for SaaS customers.</li>
                             <li>Deployed and managed application environments on <strong>Azure (AKS)</strong>, contributing to cloud infrastructure design and operational excellence.</li>
@@ -447,20 +454,20 @@
                         <div class="timeline-header">
                             <div class="timeline-meta">
                                 <span class="timeline-date">
-                                    <i class="fas fa-calendar-alt"></i> October 2018 — June 2020
+                                    <i class="fas fa-calendar-alt"></i> <span data-i18n="exp.smu.date">October 2018 — June 2020</span>
                                 </span>
                                 <span class="timeline-location">
-                                    <i class="fas fa-map-marker-alt"></i> Tunis, Tunisia
+                                    <i class="fas fa-map-marker-alt"></i> <span data-i18n="exp.smu.location">Tunis, Tunisia</span>
                                 </span>
                             </div>
                         </div>
-                        <h3 class="timeline-title">Software / DevOps Engineer (Apprenticeship)</h3>
+                        <h3 class="timeline-title" data-i18n="exp.smu.title">Software / DevOps Engineer (Apprenticeship)</h3>
                         <h4 class="timeline-company">
                             <span class="company-name">SMU & Think-IT</span>
                             <span class="company-divider">·</span>
-                            <span class="company-project">ThinkSchool E-Learning Platform</span>
+                            <span class="company-project" data-i18n="exp.smu.project">ThinkSchool E-Learning Platform</span>
                         </h4>
-                        <ul class="timeline-details">
+                        <ul class="timeline-details" data-i18n-html="exp.smu.details">
                             <li>Contributed to the design, development, and continuous improvement of an <strong>internal management system</strong> supporting educational workflows.</li>
                             <li>Deployed and customized <strong>Alfresco</strong> and <strong>Odoo</strong> platforms tailored to specific client requirements and business processes.</li>
                             <li>Managed <strong>web content integration</strong>, platform updates, and stakeholder communication for project delivery.</li>
@@ -483,7 +490,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">&lt;education&gt;</span>
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title" data-i18n="education.title">Education</h2>
                 <div class="section-line"></div>
             </div>
             <div class="education-grid">
@@ -492,13 +499,13 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-content">
-                        <h3>Master's in International Business & Technology</h3>
+                        <h3 data-i18n="edu.ieseg.degree">Master's in International Business & Technology</h3>
                         <h4>IÉSEG School of Management</h4>
                         <div class="education-meta">
                             <span><i class="fas fa-map-marker-alt"></i> Paris, France</span>
                             <span><i class="fas fa-calendar-alt"></i> 2021 — 2022</span>
                         </div>
-                        <p>Combined technology and business strategy at one of France's top business schools, gaining expertise in digital transformation, project management, and international business operations.</p>
+                        <p data-i18n="edu.ieseg.desc">Combined technology and business strategy at one of France's top business schools, gaining expertise in digital transformation, project management, and international business operations.</p>
                     </div>
                 </div>
                 <div class="education-card" data-aos="fade-up" data-aos-delay="100">
@@ -506,13 +513,13 @@
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <div class="education-content">
-                        <h3>Engineering Degree in Software Engineering</h3>
-                        <h4>South Mediterranean University (SMU)</h4>
+                        <h3 data-i18n="edu.smu.degree">Engineering Degree in Software Engineering</h3>
+                        <h4 data-i18n="edu.smu.school">South Mediterranean University (SMU)</h4>
                         <div class="education-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</span>
+                            <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="edu.smu.location">Tunis, Tunisia</span></span>
                             <span><i class="fas fa-calendar-alt"></i> 2016 — 2021</span>
                         </div>
-                        <p>Comprehensive five-year engineering program covering software architecture, systems programming, algorithms, databases, and cloud computing with hands-on industry experience.</p>
+                        <p data-i18n="edu.smu.desc">Comprehensive five-year engineering program covering software architecture, systems programming, algorithms, databases, and cloud computing with hands-on industry experience.</p>
                     </div>
                 </div>
             </div>
@@ -524,7 +531,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">&lt;certifications&gt;</span>
-                <h2 class="section-title">Certifications</h2>
+                <h2 class="section-title" data-i18n="certifications.title">Certifications</h2>
                 <div class="section-line"></div>
             </div>
             <div class="cert-grid">
@@ -532,25 +539,25 @@
                     <div class="cert-icon">
                         <i class="fab fa-aws"></i>
                     </div>
-                    <h3>AWS Certified Cloud Practitioner</h3>
+                    <h3 data-i18n="cert.aws.name">AWS Certified Cloud Practitioner</h3>
                     <p>Amazon Web Services</p>
-                    <span class="cert-date">September 2020</span>
+                    <span class="cert-date" data-i18n="cert.aws.date">September 2020</span>
                 </div>
                 <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="cert-icon">
                         <i class="fas fa-cloud"></i>
                     </div>
-                    <h3>IoT Cloud Developer</h3>
+                    <h3 data-i18n="cert.iot.name">IoT Cloud Developer</h3>
                     <p>IBM Cloud</p>
-                    <span class="cert-date">January 2021</span>
+                    <span class="cert-date" data-i18n="cert.iot.date">January 2021</span>
                 </div>
                 <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="cert-icon">
                         <i class="fas fa-chalkboard-teacher"></i>
                     </div>
-                    <h3>Train the Trainer</h3>
+                    <h3 data-i18n="cert.trainer.name">Train the Trainer</h3>
                     <p>CCDH</p>
-                    <span class="cert-date">April 2016</span>
+                    <span class="cert-date" data-i18n="cert.trainer.date">April 2016</span>
                 </div>
             </div>
         </div>
@@ -561,12 +568,12 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">&lt;contact&gt;</span>
-                <h2 class="section-title">Let's Connect</h2>
+                <h2 class="section-title" data-i18n="contact.title">Let's Connect</h2>
                 <div class="section-line"></div>
             </div>
             <div class="contact-wrapper">
                 <div class="contact-text">
-                    <p>
+                    <p data-i18n-html="contact.text">
                         Whether you're looking for a <strong>DevOps lead</strong> to architect your cloud platform, 
                         need help <strong>scaling your infrastructure</strong>, or want to discuss 
                         <strong>engineering best practices</strong> — I'd love to hear from you.
@@ -575,7 +582,7 @@
                 <div class="contact-cards">
                     <a href="mailto:medaymenrachid@gmail.com" class="contact-card">
                         <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
+                        <h3 data-i18n="contact.email">Email</h3>
                         <p>medaymenrachid@gmail.com</p>
                     </a>
                     <a href="https://linkedin.com/in/AymenRachid" target="_blank" rel="noopener noreferrer" class="contact-card">
@@ -590,8 +597,8 @@
                     </a>
                     <div class="contact-card">
                         <i class="fas fa-map-marker-alt"></i>
-                        <h3>Location</h3>
-                        <p>Paris, France</p>
+                        <h3 data-i18n="contact.location">Location</h3>
+                        <p data-i18n="contact.locationValue">Paris, France</p>
                     </div>
                 </div>
             </div>
@@ -605,7 +612,7 @@
                 <div class="footer-logo">
                     <span class="logo-bracket">{</span>AR<span class="logo-bracket">}</span>
                 </div>
-                <p class="footer-text">
+                <p class="footer-text" data-i18n-html="footer.text">
                     Designed & built by Aymen Rachid &middot; &copy; 2026
                 </p>
                 <div class="footer-links">
